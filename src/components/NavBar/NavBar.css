@@ -1,0 +1,58 @@
+nav {
+  /* width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0; */
+  width: 100vw;
+  position: relative;
+  height: var(--nav-height);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: 0.03em;
+  font-weight: 500;
+
+  box-shadow: 0 0.1vmin 0.2vmin rgba(0, 0, 0, 0.07),
+    0 0.2vmin 0.4vmin rgba(0, 0, 0, 0.07), 0 0.4vmin 0.8vmin rgba(0, 0, 0, 0.07),
+    0 0.8vmin 1.6vmin rgba(0, 0, 0, 0.07), 0 1.6vmin 3.2vmin rgba(0, 0, 0, 0.07),
+    0 3.2vmin 6.4vmin rgba(0, 0, 0, 0.07);
+}
+
+.nav-links {
+  position: absolute;
+  right: 0;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1em;
+  padding-right: 2em;
+}
+
+nav span {
+  font-weight: 800;
+  color: var(--red);
+}
+
+nav span span {
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.nav-links a {
+  padding: 1em;
+  transition: all 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: var(--white);
+  pointer-events: auto;
+}
+
+.left {
+  float: left;
+}

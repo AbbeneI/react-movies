@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --nav-height: min(10vh, 80px);
+
+  --white: #f1f1f1;
+  --black: #141414;
+  --red: #fe454b;
+  --red-light: #ff8589;
+}
+
+body {
+  background-color: var(--black);
+  background: radial-gradient(
+    circle,
+    rgba(20, 20, 20, 1) 40%,
+    rgba(0, 0, 0, 1) 100%
+  );
+
+  color: var(--red);
+  margin-top: 0;
+  margin: auto;
+
+  letter-spacing: 0.01em;
+  padding-bottom: var(--nav-height);
+}
+
+strong {
+  margin-bottom: 0.5em;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  width: 100vw;
+  margin-top: 0;
+}
+
+a {
+  color: inherit;
+}
+
+main {
+  padding-top: var(--nav-height);
+}

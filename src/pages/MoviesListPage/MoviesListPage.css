@@ -1,0 +1,24 @@
+.movies-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+
+.movies-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  height: fit-content;
+  width: fit-content;
+
+  transition: all 0.2s ease;
+}
+
+.movies-container:hover .movie-card:not(:hover) {
+  opacity: 0.55;
+}
